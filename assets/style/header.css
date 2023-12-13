@@ -1,0 +1,85 @@
+header {
+    overflow: hidden;
+    height: 60px;
+    background-color: var(--ap-background-color-other);
+}
+
+.div-side-l {
+    width: 20%;
+}
+
+.div-side-r {
+    margin-left: 10px;
+    width: 60px;
+    vertical-align: middle;
+    text-align: right;
+    line-height: 60px;
+}
+
+.div-menu {
+    width: calc(80% - 70px);
+}
+
+h1 {
+    color: var(--btn-color);
+    line-height: 60px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+    cursor: pointer;
+    
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+nav ul li {
+    display: inline;
+    line-height: 60px;
+    font-size: 14px;
+}
+
+nav {
+    text-align: 60px;
+    text-align: right;
+}
+
+a:hover {
+    color:var(--btn-color);
+}
+
+a {
+    color: var(--font-color);
+    text-decoration: none;
+    transition: color 0.25s;
+    display: inline;
+}
+
+nav ul li + li {
+    margin-left: 20px;
+}
+
+.menu {
+    display: none;
+    margin-right: 10px;
+    justify-content: space-between;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 10; /* Adjust as needed */
+}
+
+#menu-icon i {
+    line-height: 60px;
+    width: 50px;
+}
+

@@ -1,0 +1,191 @@
+@charset "utf-8";
+@import "./reset.css";
+@import "./header.css";
+@import "./footer.css";
+
+main {
+    overflow:hidden;
+}
+
+.container {
+    width: min(100% - 60px, 1080px);
+    margin-inline: auto;
+    height: 100%;
+}
+
+.container-1 {
+    width: min(100% - 30px,880px);
+    margin-inline: auto;
+    margin-bottom: 100px;
+    
+
+}
+
+.flexbox {
+    display: flex;
+}
+
+
+.center {
+    
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+    height: 600px;
+}
+
+.hero {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-image: url(../image/hero2.jpg);
+    background-repeat:no-repeat;
+    text-align: center;
+}
+
+.hero::after {
+    position: absolute;
+    inset: 0 auto auto 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 0.4);
+    z-index: -2;
+}
+
+main h1 {
+    font-size: 58px;
+    line-height: 68px;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 20px;
+    color: rgb(33, 33, 33);
+    padding-bottom: 20px;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+input {
+    height: 35px;
+    border-radius: 5px;
+    font-size: 12px;  
+}
+
+
+input[type=button] {
+    width: 60px;
+    background-color: var(--btn-color);
+    color: var(--font-color);
+    cursor:pointer;
+    font-weight: bolder;
+}
+
+#explore {
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    text-transform: capitalize;
+    text-decoration: none;
+    background-color: var(--btn-color);
+    border-radius: 5px;
+    padding: 15px 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+#explore:hover{
+    background-color: #90ee90;
+    color:var(--font-color);
+}
+
+.row {
+    margin-top:20px;
+    display:flex;
+    flex-wrap: Wrap;
+    gap:20px;
+    text-align: center;
+}
+
+.column {
+    flex: 1 0 auto;
+    width: calc(25% - 20px);
+    height: 350px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+.center-track {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.text-track {
+    width: 400px;
+}
+
+.pic img {
+    width: 345px;
+}
+
+@keyframes anim {
+    from {
+        opacity: 0;
+        translate: 0 -6px;
+    } to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+dialog {
+    margin:auto;
+    width: 310px;
+    padding: 19px 25px 24px 25px;
+    border-radius: 8px;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgb(0 0 0/0.2);
+    animation: 0.25s linear anim;
+}
+
+dialog::backdrop {
+    background-color: rgb(0 0 0/0.2);
+    backdrop-filter: blur(5px);
+}
+
+dialog h2 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+}
+
+dialog p {
+    margin-top: 10px;
+    font-size: 1.8 rem;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    
+   .div-menu nav {
+        display: none;
+   }
+
+   .div-menu {
+        text-align: right;
+   }
+
+   .column {
+        width: 100%;
+    }
+}
