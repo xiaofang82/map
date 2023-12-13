@@ -20,9 +20,10 @@ header {
     width: calc(80% - 70px);
 }
 
-h1 {
+.div-side-l h1 {
     color: var(--btn-color);
     line-height: 60px;
+    font-family: Lobster;
 }
 
 .logo {
