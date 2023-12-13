@@ -188,4 +188,14 @@ dialog p {
    .column {
         width: 100%;
     }
+    
+    #largfooter {
+        display: none;
+    }
+    #smallfooter {
+        display: block;
+    }
+    #line{
+        display: none;
+    }
 }
