@@ -23,6 +23,11 @@ main {
     display: flex;
 }
 
+main h2 {
+    font-size: 36px;
+    color: #90ee90;
+}
+
 .center {
 
     display: flex;
@@ -81,6 +86,13 @@ input[type=button] {
     font-weight: bolder;
 }
 
+input[type=text],input[type=password] {
+    border-radius: 5px;
+    border: 1px solid #9c9797;
+    padding: 5px 5px;
+    width: 200px;
+}
+
 #explore {
     margin-top: 20px;
     font-size: 17px;
@@ -119,7 +131,7 @@ input[type=button] {
 }
 
 .row {
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     flex-wrap: Wrap;
     gap: 20px;
@@ -127,12 +139,11 @@ input[type=button] {
 }
 
 #map {
-    width: 60vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 39px;
-    margin-left: 60px;
     color: black;
     visibility: hidden;
 }
@@ -156,6 +167,7 @@ input[type=button] {
 
 .text-track {
     width: 400px;
+    font-size: 14px;
 }
 
 .pic img {
@@ -176,7 +188,7 @@ input[type=button] {
 
 dialog {
     margin: auto;
-    width: 310px;
+    width: 260px;
     padding: 19px 25px 24px 25px;
     border-radius: 8px;
     border-style: none;
@@ -191,16 +203,19 @@ dialog::backdrop {
 }
 
 dialog h2 {
-    font-size: 2.6rem;
-    font-weight: 700;
+
     letter-spacing: -0.2px;
+    color: var(--btn-color);
+}
+
+label {
+    font-size: 12px;
+    font-weight: 400px;
 }
 
 dialog p {
     margin-top: 10px;
-    font-size: 1.8 rem;
     line-height: 1.4;
-    font-weight: 600;
 }
 
 .title-small  {
