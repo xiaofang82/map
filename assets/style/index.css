@@ -25,7 +25,7 @@ main {
 
 main h2 {
     font-size: 36px;
-    color: #90ee90;
+    color: var(--btn-color);
 }
 
 .center {
@@ -60,6 +60,8 @@ main h1 {
     font-size: 58px;
     line-height: 68px;
     margin-bottom: 20px;
+    color: var(--btn-color);
+    
 }
 
 .text {
