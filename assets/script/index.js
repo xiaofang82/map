@@ -38,6 +38,7 @@ function showMap() {
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v12',
         center: [0, 0], // Initial center, will be updated with user's location
+        pitch:40,
         zoom: 12 // Initial zoom level
 
     });
