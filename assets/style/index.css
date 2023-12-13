@@ -4,7 +4,7 @@
 @import "./footer.css";
 
 main {
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .container {
@@ -14,20 +14,17 @@ main {
 }
 
 .container-1 {
-    width: min(100% - 30px,880px);
+    width: min(100% - 30px, 880px);
     margin-inline: auto;
     margin-bottom: 100px;
-    
-
 }
 
 .flexbox {
     display: flex;
 }
 
-
 .center {
-    
+
     display: flex;
     justify-content: center;
     place-items: center;
@@ -40,7 +37,7 @@ main {
     height: 600px;
     position: relative;
     background-image: url(../image/hero2.jpg);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     text-align: center;
 }
 
@@ -73,15 +70,14 @@ main h1 {
 input {
     height: 35px;
     border-radius: 5px;
-    font-size: 12px;  
+    font-size: 12px;
 }
-
 
 input[type=button] {
     width: 60px;
     background-color: var(--btn-color);
     color: var(--font-color);
-    cursor:pointer;
+    cursor: pointer;
     font-weight: bolder;
 }
 
@@ -98,17 +94,47 @@ input[type=button] {
     transition: all 0.3s ease-in-out;
 }
 
-#explore:hover{
+#explore:hover {
     background-color: #90ee90;
-    color:var(--font-color);
+    color: var(--font-color);
+}
+
+#trackBtn {
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    text-transform: capitalize;
+    text-decoration: none;
+    background-color: var(--btn-color);
+    border-radius: 5px;
+    padding: 15px 25px;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 0;
+}
+
+#trackBtn:hover {
+    background-color: #90ee90;
+    color: var(--font-color);
 }
 
 .row {
-    margin-top:20px;
-    display:flex;
+    margin-top: 20px;
+    display: flex;
     flex-wrap: Wrap;
-    gap:20px;
+    gap: 20px;
     text-align: center;
+}
+
+#map {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 39px;
+    margin-left: 60px;
+    color: black;
+    visibility: hidden;
 }
 
 .column {
@@ -140,14 +166,16 @@ input[type=button] {
     from {
         opacity: 0;
         translate: 0 -6px;
-    } to {
+    }
+
+    to {
         opacity: 1;
         translate: 0 0;
     }
 }
 
 dialog {
-    margin:auto;
+    margin: auto;
     width: 310px;
     padding: 19px 25px 24px 25px;
     border-radius: 8px;
@@ -175,27 +203,36 @@ dialog p {
     font-weight: 600;
 }
 
+.title-small  {
+    font-size: 14px;
+}
+
+.smallcolumn {
+    font-size: 16px;
+}
 @media screen and (max-width: 768px) {
-    
-   .div-menu nav {
+
+    .div-menu nav {
         display: none;
-   }
+    }
 
-   .div-menu {
+    .div-menu {
         text-align: right;
-   }
+    }
 
-   .column {
+    .column {
         width: 100%;
     }
-    
+
     #largfooter {
         display: none;
     }
+
     #smallfooter {
         display: block;
     }
-    #line{
+
+    #line {
         display: none;
     }
 }

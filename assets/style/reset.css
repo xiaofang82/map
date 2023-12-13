@@ -29,5 +29,5 @@ body {
     margin-inline: auto;
     background-color: var(--app-background-color);
     color: #e0dddd;
-    border-radius: 0;
+    border-radius: 0;   
 }
