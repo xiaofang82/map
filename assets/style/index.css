@@ -227,6 +227,7 @@ dialog p {
 .smallcolumn {
     font-size: 16px;
 }
+
 @media screen and (max-width: 768px) {
 
     .div-menu nav {
@@ -253,3 +254,4 @@ dialog p {
         display: none;
     }
 }
+

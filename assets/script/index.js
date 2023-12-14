@@ -46,9 +46,14 @@ function showMap() {
     const popup = new mapboxgl.Popup({ offset: 25 }).setText(
         'Your Location'
     )
+
+    const options = {
+        maximumAge: 0,
+        enableHightAccuracy: true
+    }
     
     // Get user's location and update the map
-    navigator.geolocation.getCurrentPosition(
+    navigator.geolocation.watchPosition(
         (position) => {
             const { latitude, longitude } = position.coords;
 
@@ -66,7 +71,8 @@ function showMap() {
         },
         (error) => {
             console.error('Error getting user location:', error);
-        }
+        },
+        options
     );
 
     map.addControl(new mapboxgl.FullscreenControl(), 'top-right');
